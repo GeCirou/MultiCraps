@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    display:block
+}
+
+div {
+    margin: 20px auto;
+    
+}
+
+label {
+    margin: 10px;
+}
+button {
+    margin: 20px;
+}
+
+.num {
+    width: 100px;
+}

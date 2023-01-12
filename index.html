@@ -2,31 +2,63 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="style.css">
+        <script src="multi.js"></script>
         <title>Práctica de cálculo</title>
-        meta
     </head>
     <body>
+        <h1>Práctica de cálculo</h1>
         <div>
             <h2>9</h2>
             <div>
-                <label for="max">max:</label>
-                <input type="number" name="" id="" value="" /> <br />
                 <label for="min">min:</label>
-                <input type="number" name="" id="" value="" /> <br />
-                <button type="submit">Generar</button> <br />
-                <label for=""></label> <label for=" x 9 = "> x 9 = </label>
-                <input type="number" name="" id="" value="" /> <br />
-                <button type="submit">Resultado</button>
+                <input type="number" class="num" name="" id="min9" value="0" />
+                <label for="max">max:</label>
+                <input type="number" class="num" name="" id="max9" value="0" /> <br />
+                <button type="button" id="btn9" onClick="generar9()">Generar</button> <br />
+                <label for="" id="lbl9"></label><label for=""> x 9 = </label>
+                <input type="number" class="num" name="" id="result9" value="" /> <br />
+                <button type="button"  id="chk9" onClick="probar9()">Resultado</button>
             </div>
         </div>
         <div>
             <h2>7</h2>
+            <div>
+                <label for="min">min:</label>
+                <input type="number" class="num" name="" id="min7" value="0" />
+                <label for="max">max:</label>
+                <input type="number" class="num" name="" id="max7" value="0" /> <br />
+                <button type="button" id="btn7" onClick="generar7()">Generar</button> <br />
+                <label for="" id="lbl7"></label> <label for=""> x 7 = </label>
+                <input type="number" class="num" name="" id="result7" value="" /> <br />
+                <button type="button" id="chk7" onClick="probar7()">Resultado</button>
+            </div>
         </div>
         <div>
             <h2>31</h2>
+            <div>
+                <label for="min">min:</label>
+                <input type="number" class="num" name="" id="min31" value="0" />
+                <label for="max">max:</label>
+                <input type="number" class="num" name="" id="max31" value="0" /> <br />
+                <button type="button" id="btn31" onClick="generar31()">Generar</button> <br />
+                <label for="" id="lbl31"></label> <label for=""> x 31 = </label>
+                <input type="number" class="num" name="" id="result31" value="" /> <br />
+                <button type="button" id="chk31" onClick="probar31()">Resultado</button>
+            </div>
         </div>
         <div>
             <h2>15</h2>
+            <div>
+                <label for="min">min:</label>
+                <input type="number" class="num" name="" id="min15" value="0" />
+                <label for="max">max:</label>
+                <input type="number" class="num" name="" id="max15" value="0" /> <br />
+                <button type="button" id="btn15" onClick="generar15()">Generar</button> <br />
+                <label for="" id="lbl15"></label> <label for=""> x 15 = </label>
+                <input type="number" class="num" name="" id="result15" value="" /> <br />
+                <button type="button" id="chk15" onClick="probar15()">Resultado</button>
+            </div>
         </div>
     </body>
 </html>
