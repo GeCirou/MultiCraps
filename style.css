@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 30pt;
+    font-size: 40pt;
     display:block
 }
 
@@ -16,8 +16,12 @@ label {
 }
 button {
     margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30pt;
 }
 
 .num {
-    width: 100px;
+    width: 200px;
+    font-size: 30pt;
 }
