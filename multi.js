@@ -1,11 +1,11 @@
-
-
 var total9 = 0;
 var total7 = 0;
 var total31 = 0;
 var total15 = 0;
 
 var aleat = 0;
+
+var score = 0;
 
 function numeroAleatorio(min, max) { 
     return parseInt(Math.random() * (max - min) + min) * 100;
@@ -41,42 +41,87 @@ function generar15() {
 }
 
 function probar9(){
-    var res9 = document.getElementById("result9").value;
+    var resu9  = document.getElementById("result9");
+    var res9 = resu9.value;
     var prueba9 = res9 - total9;
     if (prueba9 === 0) {
         alert("Muy bien!");
+        score += 1;
     }
     else {
         alert("El total es de " + total9 + ". No " + res9);
+        score -= 1;
     }
+    resu9.value = "";
+    document.getElementById("lblScr").innerHTML = score;
 }
 function probar7(){
-    var res7 = document.getElementById("result7").value;
+    var resu7 = document.getElementById("result7");
+    var res7 = resu7.value;
     var prueba7 = res7 - total7;
     if (prueba7 === 0) {
         alert("Muy bien!");
+        score += 1;
     }
     else {
         alert("El total es de " + total7 + ". No " + res7);
+        score -= 1;
     }
+    resu7.value = "";
+    document.getElementById("lblScr").innerHTML = score;
 }
 function probar31(){
-    var res31 = document.getElementById("result31").value;
+    var resu31 = document.getElementById("result31");
+    var res31 = resu31.value;
     var prueba31 = res31 - total31;
     if (prueba31 === 0) {
         alert("Muy bien!");
+        score += 1;
     }
     else {
         alert("El total es de " + total31 + ". No " + res31);
+        score -= 1;
     }
+    resu31.value = "";
+    document.getElementById("lblScr").innerHTML = score;
 }
 function probar15(){
-    var res15 = document.getElementById("result15").value;
+    var resu15 = document.getElementById("result15");
+    var res15 = resu15.value;
     var prueba15 = res15 - total15;
     if (prueba15 === 0) {
         alert("Muy bien!");
+        score += 1;
     }
     else {
         alert("El total es de " + total15 + ". No " + res15);
+        score -= 1;
     }
+    resu15.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+}
+
+function limpiarMin9() {
+    min9.value = "";
+}
+function limpiarMax9() {
+    max9.value = "";
+}
+function limpiarMin7() {
+    min7.value = "";
+}
+function limpiarMax7() {
+    max7.value = "";
+}
+function limpiarMin31() {
+    min31.value = "";
+}
+function limpiarMax31() {
+    max31.value = "";
+}
+function limpiarMin15() {
+    min15.value = "";
+}
+function limpiarMax15() {
+    max15.value = "";
 }

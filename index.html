@@ -7,14 +7,15 @@
         <title>Práctica de cálculo</title>
     </head>
     <body>
+        <header> <h1>PUNTAJE: <label for="" id="lblScr">0</label></h1> </header>
         <h1>Práctica de cálculo</h1>
         <div>
             <h2>9</h2>
             <div>
                 <label for="min">min:</label>
-                <input type="number" class="num" name="" id="min9" value="0" />
+                <input type="number" class="num" name="" id="min9" value="0" onclick="limpiarMin9()" />
                 <label for="max">max:</label>
-                <input type="number" class="num" name="" id="max9" value="0" /> <br />
+                <input type="number" class="num" name="" id="max9" value="0" onclick="limpiarMax9()"/> <br />
                 <button type="button" id="btn9" onClick="generar9()">Generar</button> <br />
                 <label for="" id="lbl9"></label><label for=""> x 9 = </label>
                 <input type="number" class="num" name="" id="result9" value="" /> <br />
@@ -25,9 +26,9 @@
             <h2>7</h2>
             <div>
                 <label for="min">min:</label>
-                <input type="number" class="num" name="" id="min7" value="0" />
+                <input type="number" class="num" name="" id="min7" value="0" onclick="limpiarMin7()" />
                 <label for="max">max:</label>
-                <input type="number" class="num" name="" id="max7" value="0" /> <br />
+                <input type="number" class="num" name="" id="max7" value="0" onclick="limpiarMax7()" /> <br />
                 <button type="button" id="btn7" onClick="generar7()">Generar</button> <br />
                 <label for="" id="lbl7"></label> <label for=""> x 7 = </label>
                 <input type="number" class="num" name="" id="result7" value="" /> <br />
@@ -38,9 +39,9 @@
             <h2>31</h2>
             <div>
                 <label for="min">min:</label>
-                <input type="number" class="num" name="" id="min31" value="0" />
+                <input type="number" class="num" name="" id="min31" value="0" onclick="limpiarMin31()" />
                 <label for="max">max:</label>
-                <input type="number" class="num" name="" id="max31" value="0" /> <br />
+                <input type="number" class="num" name="" id="max31" value="0" onclick="limpiarMax31()" /> <br />
                 <button type="button" id="btn31" onClick="generar31()">Generar</button> <br />
                 <label for="" id="lbl31"></label> <label for=""> x 31 = </label>
                 <input type="number" class="num" name="" id="result31" value="" /> <br />
@@ -51,9 +52,9 @@
             <h2>15</h2>
             <div>
                 <label for="min">min:</label>
-                <input type="number" class="num" name="" id="min15" value="0" />
+                <input type="number" class="num" name="" id="min15" value="0" onclick="limpiarMin15()" />
                 <label for="max">max:</label>
-                <input type="number" class="num" name="" id="max15" value="0" /> <br />
+                <input type="number" class="num" name="" id="max15" value="0" onclick="limpiarMax15()" /> <br />
                 <button type="button" id="btn15" onClick="generar15()">Generar</button> <br />
                 <label for="" id="lbl15"></label> <label for=""> x 15 = </label>
                 <input type="number" class="num" name="" id="result15" value="" /> <br />
