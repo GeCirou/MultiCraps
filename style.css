@@ -3,7 +3,8 @@ body {
     color: white;
     text-align: center;
     font-size: 40pt;
-    display:block
+    display:block;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
