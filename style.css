@@ -6,6 +6,12 @@ body {
     display:block;
     font-family: 'Roboto', sans-serif;
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image: -o-linear-gradient(rgb(0,0,0), rgb(30,30,30));
+}
 
 div {
     margin: 20px auto;
@@ -20,6 +26,8 @@ button {
     padding: 15px;
     border-radius: 10px;
     font-size: 30pt;
+    border-color: gold;
+    box-shadow: 5px 5px 5px 0 rgba(207, 175, 55, 0.75);
 }
 
 .num {
