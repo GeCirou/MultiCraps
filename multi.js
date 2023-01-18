@@ -5,6 +5,9 @@ var total15 = 0;
 var total120 = 0;
 var total150 = 0;
 var total2 = 0;
+var total83 = 0;
+var total66 = 0;
+var total05 = 0;
 
 var aleat = 0;
 
@@ -50,14 +53,14 @@ function generar120() {
     var min120 = document.getElementById("min120").value / 100;
     document.getElementById('lbl120').innerHTML = numeroAleatorio(min120, max120);
     aleat = document.getElementById('lbl120').innerHTML = numeroAleatorio(min120, max120);
-    total120 = aleat * 1.2;
+    total120 = Math.round(aleat * 0.012) * 100;
 }
 function generar150() {
     var max150 = document.getElementById("max150").value / 100;
     var min150 = document.getElementById("min150").value / 100;
     document.getElementById('lbl150').innerHTML = numeroAleatorio(min150, max150);
     aleat = document.getElementById('lbl150').innerHTML = numeroAleatorio(min150, max150);
-    total150 = aleat * 1.5;
+    total150 = Math.round(aleat * 0.015) * 100;
 }
 function generar2() {
     var max2 = document.getElementById("max2").value / 100;
@@ -66,8 +69,31 @@ function generar2() {
     aleat = document.getElementById('lbl2').innerHTML = numeroAleatorio(min2, max2);
     total2 = aleat * 2;
 }
+//Malas
+function generar83() {
+    var max83 = document.getElementById("max83").value / 100;
+    var min83 = document.getElementById("min83").value / 100;
+    document.getElementById('lbl83').innerHTML = numeroAleatorio(min83, max83);
+    aleat = document.getElementById('lbl83').innerHTML = numeroAleatorio(min83, max83);
+    total83 = Math.round(aleat * 0.00833) * 100;
+}
+function generar66() {
+    var max66 = document.getElementById("max66").value / 100;
+    var min66 = document.getElementById("min66").value / 100;
+    document.getElementById('lbl66').innerHTML = numeroAleatorio(min66, max66);
+    aleat = document.getElementById('lbl66').innerHTML = numeroAleatorio(min66, max66);
+    total66 = Math.round(aleat * 0.00666) * 100;
+}
+function generar05() {
+    var max05 = document.getElementById("max05").value / 100;
+    var min05 = document.getElementById("min05").value / 100;
+    document.getElementById('lbl05').innerHTML = numeroAleatorio(min05, max05);
+    aleat = document.getElementById('lbl05').innerHTML = numeroAleatorio(min05, max05);
+    total05 = Math.round(aleat / 200) * 100;
+}
 
 //Dar resultado
+//Camuninas
 function probar9(){
     var resu9  = document.getElementById("result9");
     var res9 = resu9.value;
@@ -102,6 +128,8 @@ function probar7(){
     document.getElementById("lblScr").innerHTML = score;
     document.getElementById("lblTry").innerHTML = intento;
 }
+
+//Cuadro
 function probar31(){
     var resu31 = document.getElementById("result31");
     var res31 = resu31.value;
@@ -136,6 +164,9 @@ function probar15(){
     document.getElementById("lblScr").innerHTML = score;
     document.getElementById("lblTry").innerHTML = intento;
 }
+
+//Enganches
+//Buenas
 function probar120(){
     var resu120 = document.getElementById("result120");
     var res120 = resu120.value;
@@ -188,7 +219,61 @@ function probar2(){
     document.getElementById("lblTry").innerHTML = intento;
 }
 
+//malas
+function probar83(){
+    var resu83 = document.getElementById("result83");
+    var res83 = resu83.value;
+    var prueba83 = res83 - total83;
+    if (prueba83 === 0) {
+        alert("Muy bien!");
+        score += 1;
+    }
+    else {
+        alert("El total es de " + total83 + ". No " + res83);
+        score -= 1;
+    }
+    intento += 1;
+    resu83.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+    document.getElementById("lblTry").innerHTML = intento;
+}
+function probar66(){
+    var resu66 = document.getElementById("result66");
+    var res66 = resu66.value;
+    var prueba66 = res66 - total66;
+    if (prueba66 === 0) {
+        alert("Muy bien!");
+        score += 1;
+    }
+    else {
+        alert("El total es de " + total66 + ". No " + res66);
+        score -= 1;
+    }
+    intento += 1;
+    resu66.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+    document.getElementById("lblTry").innerHTML = intento;
+}
+function probar05(){
+    var resu05 = document.getElementById("result05");
+    var res05 = resu05.value;
+    var prueba05 = res05 - total05;
+    if (prueba05 === 0) {
+        alert("Muy bien!");
+        score += 1;
+    }
+    else {
+        alert("El total es de " + total05 + ". No " + res05);
+        score -= 1;
+    }
+    intento += 1;
+    resu05.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+    document.getElementById("lblTry").innerHTML = intento;
+}
+
 //Limpiar campos
+//Camuninas
 function limpiarMin9() {
     min9.value = "";
 }
@@ -201,6 +286,8 @@ function limpiarMin7() {
 function limpiarMax7() {
     max7.value = "";
 }
+
+//Cuadro
 function limpiarMin31() {
     min31.value = "";
 }
@@ -213,6 +300,9 @@ function limpiarMin15() {
 function limpiarMax15() {
     max15.value = "";
 }
+
+//Enganche
+//Buenas
 function limpiarMin120() {
     min120.value = "";
 }
@@ -230,4 +320,23 @@ function limpiarMin2() {
 }
 function limpiarMax2() {
     max2.value = "";
+}
+//Malas
+function limpiarMin83() {
+    min83.value = "";
+}
+function limpiarMax83() {
+    max83.value = "";
+}
+function limpiarMin66() {
+    min66.value = "";
+}
+function limpiarMax66() {
+    max66.value = "";
+}
+function limpiarMin05() {
+    min05.value = "";
+}
+function limpiarMax05() {
+    max05.value = "";
 }
