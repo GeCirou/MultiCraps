@@ -13,9 +13,9 @@
         <header>
             <h2>PUNTAJE: <label for="" id="lblScr">0</label></h2>
             <h2>INTENTOS: <label for="" id="lblTry">0</label></h2>
+            <div><a href="#Title">Práctica</a><a href="#Tabla">Tablas</a></div>
          </header>
         <h1 id="Title">Práctica de cálculo</h1>
-        <div><a href="#Tabla">Tabla de pagos</a></div>
         <div>
             <h2>Camunina</h2>
             (500-5000)
@@ -185,9 +185,57 @@
                 </tr>
             </table>
         </div>
+        <h2>Costilla</h2>
+        (2000 - 15000)
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h3>6 / 8</h3>
+                        <div>
+                            <label for="min">Min:</label>
+                            <input type="number" class="num" name="" id="min110" value="0" onclick="limpiarMin110()" />
+                            <label for="max">Max:</label>
+                            <input type="number" class="num" name="" id="max110" value="0" onclick="limpiarMax110()" /> <br />
+                            <button type="button" id="btn110" onClick="generar110()">Generar</button> <br />
+                            <label for="" id="lbl110"></label> <label for=""> x 110% = </label>
+                            <input type="number" class="num" name="" id="result110" value="" /> <br />
+                            <button type="button" id="chk110" onClick="probar110()">Resultado</button>
+                        </div>
+                    </td>
+                    <td>
+                        <h3>5 / 9</h3>
+                        <div>
+                            <label for="min">Min:</label>
+                            <input type="number" class="num" name="" id="min140" value="0" onclick="limpiarMin140()" />
+                            <label for="max">Max:</label>
+                            <input type="number" class="num" name="" id="max140" value="0" onclick="limpiarMax140()" /> <br />
+                            <button type="button" id="btn140" onClick="generar140()">Generar</button> <br />
+                            <label for="" id="lbl140"></label> <label for=""> x 140% = </label>
+                            <input type="number" class="num" name="" id="result140" value="" /> <br />
+                            <button type="button" id="chk140" onClick="probar140()">Resultado</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>4 / 10</h3>
+                        <div>
+                            <label for="min">Min:</label>
+                            <input type="number" class="num" name="" id="min180" value="0" onclick="limpiarMin180()" />
+                            <label for="max">Max:</label>
+                            <input type="number" class="num" name="" id="max180" value="0" onclick="limpiarMax180()" /> <br />
+                            <button type="button" id="btn180" onClick="generar180()">Generar</button> <br />
+                            <label for="" id="lbl180"></label> <label for=""> x 180% = </label>
+                            <input type="number" class="num" name="" id="result180" value="" /> <br />
+                            <button type="button" id="chk180" onClick="probar180()">Resultado</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="tPagos">
             <h2 id="Tabla">Tabla de pagos</h2>
-            <a href="#Title">Volver</a>
             <a href="#140">140%</a>
             <h3>120%</h3>
             <h4>A buena</h4>
@@ -225,7 +273,6 @@
         </div>
         <div class="tPagos">
             <h3 id="140">140%</h3>
-            <a href="#Title">Volver</a>
             <a href="#Tabla">120%</a>
             <table>
                 <tr><td class="td1">Base</td><td class="td2">Pago</td><td class="td1">Base</td> <td class="td2">Pago</td></tr>
