@@ -21,20 +21,21 @@ var intento = 0;
 //Generar números aleatorios
 function numeroAleatorio(min, max) { 
     return parseInt(Math.random() * (max - min) + min) * 100;
+}
+function numeroAleatorioCinco(min, max) { 
+    return parseInt(Math.random() * (max - min) + min) * 500;
 } 
 
 //Camunina
 function generar9() {
     var max9 = document.getElementById("max9").value / 100;
     var min9 = document.getElementById("min9").value / 100;
-    document.getElementById('lbl9').innerHTML = numeroAleatorio(min9, max9);
     aleat = document.getElementById('lbl9').innerHTML = numeroAleatorio(min9, max9);
     total9 = aleat * 9;
 }
 function generar7() {
     var max7 = document.getElementById("max7").value / 100;
     var min7 = document.getElementById("min7").value / 100;
-    document.getElementById('lbl7').innerHTML = numeroAleatorio(min7, max7);
     aleat = document.getElementById('lbl7').innerHTML = numeroAleatorio(min7, max7);
     total7 = aleat * 7;
 }
@@ -42,14 +43,12 @@ function generar7() {
 function generar31() {
     var max31 = document.getElementById("max31").value / 100;
     var min31 = document.getElementById("min31").value / 100;
-    document.getElementById('lbl31').innerHTML = numeroAleatorio(min31, max31);
     aleat = document.getElementById('lbl31').innerHTML = numeroAleatorio(min31, max31);
     total31 = aleat * 31;
 }
 function generar15() {
     var max15 = document.getElementById("max15").value / 100;
     var min15 = document.getElementById("min15").value / 100;
-    document.getElementById('lbl15').innerHTML = numeroAleatorio(min15, max15);
     aleat = document.getElementById('lbl15').innerHTML = numeroAleatorio(min15, max15);
     total15 = aleat * 15;
 }
@@ -58,21 +57,18 @@ function generar15() {
 function generar120() {
     var max120 = document.getElementById("max120").value / 100;
     var min120 = document.getElementById("min120").value / 100;
-    document.getElementById('lbl120').innerHTML = numeroAleatorio(min120, max120);
     aleat = document.getElementById('lbl120').innerHTML = numeroAleatorio(min120, max120);
     total120 = Math.round(aleat * 0.012) * 100;
 }
 function generar150() {
     var max150 = document.getElementById("max150").value / 100;
     var min150 = document.getElementById("min150").value / 100;
-    document.getElementById('lbl150').innerHTML = numeroAleatorio(min150, max150);
     aleat = document.getElementById('lbl150').innerHTML = numeroAleatorio(min150, max150);
     total150 = Math.round(aleat * 0.015) * 100;
 }
 function generar2() {
     var max2 = document.getElementById("max2").value / 100;
     var min2 = document.getElementById("min2").value / 100;
-    document.getElementById('lbl2').innerHTML = numeroAleatorio(min2, max2);
     aleat = document.getElementById('lbl2').innerHTML = numeroAleatorio(min2, max2);
     total2 = aleat * 2;
 }
@@ -80,44 +76,38 @@ function generar2() {
 function generar83() {
     var max83 = document.getElementById("max83").value / 100;
     var min83 = document.getElementById("min83").value / 100;
-    document.getElementById('lbl83').innerHTML = numeroAleatorio(min83, max83);
     aleat = document.getElementById('lbl83').innerHTML = numeroAleatorio(min83, max83);
     total83 = Math.round(aleat * 0.00833) * 100;
 }
 function generar66() {
     var max66 = document.getElementById("max66").value / 100;
     var min66 = document.getElementById("min66").value / 100;
-    document.getElementById('lbl66').innerHTML = numeroAleatorio(min66, max66);
     aleat = document.getElementById('lbl66').innerHTML = numeroAleatorio(min66, max66);
     total66 = Math.round(aleat * 0.00666) * 100;
 }
 function generar05() {
     var max05 = document.getElementById("max05").value / 100;
     var min05 = document.getElementById("min05").value / 100;
-    document.getElementById('lbl05').innerHTML = numeroAleatorio(min05, max05);
     aleat = document.getElementById('lbl05').innerHTML = numeroAleatorio(min05, max05);
     total05 = Math.round(aleat / 200) * 100;
 }
 //Costilla
 function generar110() {
-    var max110 = document.getElementById("max110").value / 100;
-    var min110 = document.getElementById("min110").value / 100;
-    document.getElementById('lbl110').innerHTML = numeroAleatorio(min110, max110);
-    aleat = document.getElementById('lbl110').innerHTML = numeroAleatorio(min110, max110);
-    total110 = Math.round(aleat * 0.011) * 100;
+    var max110 = document.getElementById("max110").value / 500;
+    var min110 = document.getElementById("min110").value / 500;
+    aleat = document.getElementById('lbl110').innerHTML = numeroAleatorioCinco(min110, max110);
+    total110 = Math.round(aleat * 0.011) * 100; 
 }
 function generar140() {
-    var max140 = document.getElementById("max140").value / 100;
-    var min140 = document.getElementById("min140").value / 100;
-    document.getElementById('lbl140').innerHTML = numeroAleatorio(min140, max140);
-    aleat = document.getElementById('lbl140').innerHTML = numeroAleatorio(min140, max140);
+    var max140 = document.getElementById("max140").value / 500;
+    var min140 = document.getElementById("min140").value / 500;
+    aleat = document.getElementById('lbl140').innerHTML = numeroAleatorioCinco(min140, max140);
     total140 = Math.round(aleat * 0.014) * 100;
 }
 function generar180() {
-    var max180 = document.getElementById("max180").value / 100;
-    var min180 = document.getElementById("min180").value / 100;
-    document.getElementById('lbl180').innerHTML = numeroAleatorio(min180, max180);
-    aleat = document.getElementById('lbl180').innerHTML = numeroAleatorio(min180, max180);
+    var max180 = document.getElementById("max180").value / 500;
+    var min180 = document.getElementById("min180").value / 500;
+    aleat = document.getElementById('lbl180').innerHTML = numeroAleatorioCinco(min180, max180);
     total180 = Math.round(aleat * 0.018) * 100;
 }
 
