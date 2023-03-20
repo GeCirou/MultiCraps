@@ -14,6 +14,8 @@ var total180 = 0;
 var total80 = 0;
 var total60 = 0;
 var total45 = 0;
+var total41 = 0;
+var total101 = 0;
 
 var aleat = 0;
 
@@ -130,6 +132,19 @@ function generar45() {
     var min45 = document.getElementById("min45").value / 500;
     aleat = document.getElementById('lbl45').innerHTML = numeroAleatorioCinco(min45, max45);
     total45 = Math.round(aleat * 0.0045) * 100;
+}
+//Craps
+function generar41() {
+    var max41 = document.getElementById("max41").value / 100 * 3;
+    var min41 = document.getElementById("min41").value / 100 * 3;
+    aleat = document.getElementById('lbl41').innerHTML = numeroAleatorioCinco(min41, max41);
+    total41 = Math.round(aleat * 4 + aleat / 3) * 100;
+}
+function generar101() {
+    var max101 = document.getElementById("max101").value / 100 * 3;
+    var min101 = document.getElementById("min101").value / 100 * 3;
+    aleat = document.getElementById('lbl101').innerHTML = numeroAleatorioCinco(min101, max101);
+    total101 = Math.round(aleat * 10 - aleat / 3) * 100;
 }
 
 //Dar resultado
@@ -412,6 +427,40 @@ function probar45(){
     document.getElementById("lblScr").innerHTML = score;
     document.getElementById("lblTry").innerHTML = intento;
 }
+function probar41(){
+    var resu41 = document.getElementById("result41");
+    var res41 = resu41.value;
+    var prueba41 = res41 - total41;
+    if (prueba41 === 0) {
+        alert("Muy bien!");
+        score += 1;
+    }
+    else {
+        alert("El total es de " + total41 + ". No " + res41);
+        score -= 1;
+    }
+    intento += 1;
+    resu41.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+    document.getElementById("lblTry").innerHTML = intento;
+}
+function probar101(){
+    var resu101 = document.getElementById("result101");
+    var res101 = resu101.value;
+    var prueba101 = res101 - total101;
+    if (prueba101 === 0) {
+        alert("Muy bien!");
+        score += 1;
+    }
+    else {
+        alert("El total es de " + total101 + ". No " + res101);
+        score -= 1;
+    }
+    intento += 1;
+    resu101.value = "";
+    document.getElementById("lblScr").innerHTML = score;
+    document.getElementById("lblTry").innerHTML = intento;
+}
 
 //Limpiar campos
 //Camuninas
@@ -515,4 +564,16 @@ function limpiarMin45() {
 }
 function limpiarMax45() {
     max45.value = "";
+}
+function limpiarMin41() {
+    min41.value = "";
+}
+function limpiarMax41() {
+    max41.value = "";
+}
+function limpiarMin101() {
+    min101.value = "";
+}
+function limpiarMax101() {
+    max101.value = "";
 }
