@@ -138,13 +138,13 @@ function generar41() {
     var max41 = document.getElementById("max41").value / 100 * 3;
     var min41 = document.getElementById("min41").value / 100 * 3;
     aleat = document.getElementById('lbl41').innerHTML = numeroAleatorioCinco(min41, max41);
-    total41 = Math.round(aleat * 4 + aleat / 3) * 100;
+    total41 = Math.round(aleat * 4 + aleat / 3);
 }
 function generar101() {
     var max101 = document.getElementById("max101").value / 100 * 3;
     var min101 = document.getElementById("min101").value / 100 * 3;
     aleat = document.getElementById('lbl101').innerHTML = numeroAleatorioCinco(min101, max101);
-    total101 = Math.round(aleat * 10 - aleat / 3) * 100;
+    total101 = Math.round(aleat * 10 - aleat / 3);
 }
 
 //Dar resultado
