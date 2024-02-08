@@ -1,0 +1,227 @@
+body {
+    font-size: 4rem;
+}
+
+header label {
+    font-size: 4rem;
+}
+header nav a {
+    font-size: 4rem;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-areas: 
+    "Title"
+    "Camus"
+    "Cuadro"
+    "Enganche"
+    "Costilla"
+    "Craps"
+    "Tablas";
+}
+
+h1 {
+    font-size: 7rem;
+    grid-area: Title;
+}
+h2 {
+    font-size: 5rem;
+}
+div {
+    margin: 2rem auto;
+}
+
+.section_camu {
+    grid-area: Camus;
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "68 410";
+}
+.camu_titulo {
+    grid-area: Titulo;
+}
+.section_cuadro {
+    grid-area: Cuadro;
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "212 311";
+}
+.cuadro_titulo {
+    grid-area: Titulo;
+}
+.section_enganche {
+    grid-area: Enganche;
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "SubB SubB"
+    "b68 b59"
+    "b410 b410"
+    "SubM SubM"
+    "m68 m59"
+    "m410 m410";
+}
+.enganche_titulo {
+    grid-area: Titulo;
+}
+.enganche_subTituloB{
+    grid-area: SubB;
+}
+#calcB68 {
+    grid-area: b68;
+}
+#calcB59 {
+    grid-area: b59;
+}
+#calcB410 {
+    grid-area: b410;
+}
+.enganche_subTituloM{
+    grid-area: SubM;
+}
+#calcM68 {
+    grid-area: m68;
+}
+#calcM59 {
+    grid-area: m59;
+}
+#calcM410 {
+    grid-area: m410;
+}
+.section_costilla {
+    grid-area: Costilla;
+    display: grid;
+    grid-template-areas: 
+    "TituloC TituloC"
+    "SubBC SubBC"
+    "Cb68 Cb59"
+    "Cb410 Cb410"
+    "SubMC SubMC"
+    "Cm68 Cm59"
+    "Cm410 Cm410";
+}
+.costilla_titulo {
+    grid-area: TituloC;
+}
+.costilla_subTituloB{
+    grid-area: SubBC;
+}
+#calcCostB68 {
+    grid-area: Cb68;
+}
+#calcCostB59 {
+    grid-area: Cb59;
+}
+#calcCostB410 {
+    grid-area: Cb410;
+}
+.costilla_subTituloM{
+    grid-area: SubMC;
+}
+#calcCostM68 {
+    grid-area: Cm68;
+}
+#calcCostM59 {
+    grid-area: Cm59;
+}
+#calcCostM410 {
+    grid-area: Cm410;
+}
+.section_craps {
+    grid-area: Craps;
+    display: grid;
+    grid-template-areas: 
+    "Titulo Titulo"
+    "C3 C212";
+}
+.craps_titulo {
+    grid-area: Titulo;
+}
+#calcCraps3 {
+    grid-area: C3;
+}
+#calcCraps212 {
+    grid-area: C212;
+}
+
+
+
+/* GRID CALCULOS */
+.calculadora {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "min max"
+    "generate generate"
+    "calc calc"
+    "result result";
+}
+.calculadora h3 {
+    grid-area: titulo;
+}
+.boton_generar {
+    grid-area: generate;
+}
+.calculadora div {
+    grid-area: calc;
+}
+.boton_result { 
+    grid-area: result;
+}
+
+label {
+    margin: 1rem;
+}
+button {
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+}
+
+/* TABLA */
+.section_tablas {
+    grid-area: Tablas;
+    display: grid;
+    grid-template-areas: 
+    "h2 h2"
+    "120 120"
+    "140 180";
+}
+.section_tablas h2 {
+    grid-area: h2;
+}
+.tabla-120 {
+    grid-area: 120;
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "tabla1 tabla2 tabla3";
+}
+.tabla-140 {
+    grid-area: 140;
+}
+.tabla-180 {
+    grid-area: 180;
+}
+
+.tabla-120 h2 {
+    grid-area: title;
+}
+.tabla-container1 {
+    grid-area: tabla1;
+}
+.tabla-container2 {
+    grid-area: tabla2;
+}
+.tabla-container3 {
+    grid-area: tabla3;
+}
+.tabla-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

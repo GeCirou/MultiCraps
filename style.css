@@ -20,8 +20,16 @@ body {
     background-color: var(--colorBackground);
     color: var(--colorPrimario);
     text-align: center;
-    font-size: 4rem;
     font-family:  'Baskervville', 'Libre Baskerville', serif;
+    font-size: 2rem;
+}
+
+/* LINKS */
+a {
+    color: var(--colorBoton);
+}
+a:visited {
+    color: var(--colorBoton2);
 }
 
 /* HEADER */
@@ -33,164 +41,26 @@ header {
     z-index: 999;
     background-image: linear-gradient(var(--colorBackgroundGrad), var(--colorBackground));
 }
+
 header label {
-    font-size: 4rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 header nav a {
-    font-size: 4rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 2rem;
+    line-height: 3rem;
 }
+
 
 /* MAIN */
-main {
-    display: grid;
-    grid-template-areas: 
-    "Title"
-    "Camus"
-    "Cuadro"
-    "Enganche"
-    "Costilla"
-    "Craps"
-    "Tablas";
-}
-
 h1 {
     margin-top: 2rem;
     margin-bottom: 4rem;
-    font-size: 7rem;
-    grid-area: Title;
 }
-h2 {
-    font-size: 5rem;
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
-div {
-    margin: 20px auto;
-}
-
-.section_camu {
-    grid-area: Camus;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "68 410";
-}
-.camu_titulo {
-    grid-area: Titulo;
-}
-.section_cuadro {
-    grid-area: Cuadro;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "212 311";
-}
-.cuadro_titulo {
-    grid-area: Titulo;
-}
-.section_enganche {
-    grid-area: Enganche;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "SubB SubB"
-    "b68 b59"
-    "b410 b410"
-    "SubM SubM"
-    "m68 m59"
-    "m410 m410";
-}
-.enganche_titulo {
-    grid-area: Titulo;
-}
-.enganche_subTituloB{
-    grid-area: SubB;
-}
-#calcB68 {
-    grid-area: b68;
-}
-#calcB59 {
-    grid-area: b59;
-}
-#calcB410 {
-    grid-area: b410;
-}
-.enganche_subTituloM{
-    grid-area: SubM;
-}
-#calcM68 {
-    grid-area: m68;
-}
-#calcM59 {
-    grid-area: m59;
-}
-#calcM410 {
-    grid-area: m410;
-}
-.section_costilla {
-    grid-area: Costilla;
-    display: grid;
-    grid-template-areas: 
-    "TituloC TituloC"
-    "SubBC SubBC"
-    "Cb68 Cb59"
-    "Cb410 Cb410"
-    "SubMC SubMC"
-    "Cm68 Cm59"
-    "Cm410 Cm410";
-}
-.costilla_titulo {
-    grid-area: TituloC;
-}
-.costilla_subTituloB{
-    grid-area: SubBC;
-}
-#calcCostB68 {
-    grid-area: Cb68;
-}
-#calcCostB59 {
-    grid-area: Cb59;
-}
-#calcCostB410 {
-    grid-area: Cb410;
-}
-.costilla_subTituloM{
-    grid-area: SubMC;
-}
-#calcCostM68 {
-    grid-area: Cm68;
-}
-#calcCostM59 {
-    grid-area: Cm59;
-}
-#calcCostM410 {
-    grid-area: Cm410;
-}
-.section_craps {
-    grid-area: Craps;
-    display: grid;
-    grid-template-areas: 
-    "Titulo Titulo"
-    "C3 C212";
-}
-.craps_titulo {
-    grid-area: Titulo;
-}
-#calcCraps3 {
-    grid-area: C3;
-}
-#calcCraps212 {
-    grid-area: C212;
-}
-.section_tablas {
-    grid-area: Tablas;
-    display: flex;
-    flex-direction: column;
-}
-
-/* DIVS PRACTICA*/
 section {
     padding: 1rem;
     border: 4px var(--colorBoton) solid;
@@ -201,63 +71,62 @@ section {
     padding: 1rem;
     border: 2px var(--colorBoton2) solid;
     border-radius: 15px;
-}
-
-label {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 button {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 30pt;
+    margin: 2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    font-size: 3rem;
     border-color: var(--colorBoton);
-    box-shadow: 5px 5px 5px 0 var(--colorBoton2);
+    box-shadow: .5rem .5rem .5rem 0 var(--colorBoton2);
 }
 
-.num {
-    width: 200px;
-    font-size: 30pt;
-}
-td {
+/* TABLA */
+.celda {
     border: 2px solid var(--colorPrimario);
 }
 .top_left {
+    margin-left: .5rem;
     border-top: 5px solid var(--colorPrimario);
     border-left: 5px solid var(--colorPrimario);
     border-top-left-radius: 10px;
 }
 .top_right {
-    border: 2px solid var(--colorPrimario);
+    margin-right: .5rem;
     border-top: 5px solid var(--colorPrimario);
     border-right: 5px solid var(--colorPrimario);
     border-top-right-radius: 10px;
 }
 .left {
+    margin-left: .5rem;
     border-left: 5px solid var(--colorPrimario);
 }
 .right {
+    margin-right: .5rem;
     border-right: 5px solid var(--colorPrimario);
 }
 .bottom_left {
+    margin-left: .5rem;
     border-bottom: 5px solid var(--colorPrimario);
     border-left: 5px solid var(--colorPrimario);
     border-bottom-left-radius: 5px;
 }
 .bottom_right {
+    margin-right: .5rem;
     border-bottom: 5px solid var(--colorPrimario);
     border-right: 5px solid var(--colorPrimario);
     border-bottom-right-radius: 5px;
 }
 
-/* LINKS */
-a {
-    color: var(--colorBoton);
+.tabla-container {
+    margin: 2rem auto;
 }
-a:visited {
-    color: var(--colorBoton2);
+.tabla-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
-
 /* FOOTER */
 footer {
     padding: 2rem;

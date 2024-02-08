@@ -12,6 +12,7 @@
         <title>Práctica de cálculo</title>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleDesk.css" media="(min-width: 800px)" >
     </head>
     <body>
         <header>
@@ -31,432 +32,395 @@
         <section class="section_camu">
             <div class="camu_titulo" id="camuTit">
                 <h2>Camunina</h2>
-                (500-5000)
             </div>
             <div class="calculadora" id="calc68">
-                <h3>6 / 8</h3>
+                <h3>&#9858 &#9858 6 / 8 &#9859 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min9" value="0" onclick="limpiarMin9()" /></label>                
                 <label for="max">Max: <input type="number" class="num" name="" id="max9" value="0" onclick="limpiarMax9()"/></label>
-                <button type="button" id="btn9" onClick="generar9()">Generar</button>
-                <label id="lbl9"></label><label> x 9 = <input type="number" class="num" name="" id="result9" value="" /></label>
-                <button type="button"  id="chk9" onClick="probar9()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn9" onClick="generar9()">Generar</button>
+                <div><label id="lbl9"></label><label> x 9 = <input type="number" class="num" name="" id="result9" value="" /></label></div>
+                <button class="boton_result" type="button"  id="chk9" onClick="probar9()">Resultado</button>
             </div>
             <div class="calculadora" id="calc410">
-                <h3>4 / 10</h3>
+                <h3>&#9857 &#9857 4 / 10 &#9860 &#9860</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min7" value="0" onclick="limpiarMin7()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max7" value="0" onclick="limpiarMax7()" /></label>
-                <button type="button" id="btn7" onClick="generar7()">Generar</button>
-                <label id="lbl7"></label> <label> x 7 = <input type="number" class="num" name="" id="result7" value=""/></label>
-                <button type="button" id="chk7" onClick="probar7()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn7" onClick="generar7()">Generar</button>
+                <div><label id="lbl7"></label> <label> x 7 = <input type="number" class="num" name="" id="result7" value=""/></label></div>
+                <button class="boton_result" type="button" id="chk7" onClick="probar7()">Resultado</button>
             </div>
         </section>
         <section class="section_cuadro">
             <div class="cuadro_titulo" id="cuadroTit">
                 <h2>Cuadro</h2>
-                (1600-16000)
             </div>
             <div class="calculadora" id="calc212">
-                <h3>2 / 12</h3>
-                (400-4000)
+                    <h3>&#9856 &#9856 2 / 12 &#9861 &#9861</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min31" value="0" onclick="limpiarMin31()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max31" value="0" onclick="limpiarMax31()" /></label>
-                <button type="button" id="btn31" onClick="generar31()">Generar</button>
-                <label id="lbl31"></label><label> x 31 = <input type="number" class="num" name="" id="result31" value="" /></label>
-                <button type="button" id="chk31" onClick="probar31()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn31" onClick="generar31()">Generar</button>
+                <div><label id="lbl31"></label><label> x 31 = <input type="number" class="num" name="" id="result31" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk31" onClick="probar31()">Resultado</button>
             </div>
             <div class="calculadora" id="calc311">
-                <h3>3 / 11</h3>
-                (400-4000)
+                <h3>&#9856 &#9857 3 / 11 &#9860 &#9861</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min15" value="0" onclick="limpiarMin15()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max15" value="0" onclick="limpiarMax15()" /></label>
-                <button type="button" id="btn15" onClick="generar15()">Generar</button>
-                <label id="lbl15"></label><label> x 15 = <input type="number" class="num" name="" id="result15" value="" /></label>
-                <button type="button" id="chk15" onClick="probar15()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn15" onClick="generar15()">Generar</button>
+                <div><label id="lbl15"></label><label> x 15 = <input type="number" class="num" name="" id="result15" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk15" onClick="probar15()">Resultado</button>
             </div>
         </section>
         <section class="section_enganche">
             <h2 class="enganche_titulo" id="engancheTit">Enganches</h2>
             <div class="enganche_subTituloB">
                 <h3>A buena</h3>
-                (2000-50000)
             </div>
             <div class="calculadora" id="calcB68">
-                <h3>6 / 8</h3>
+                <h3>&#9857 &#9859 6 / 8 &#9860 &#9858</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min120" value="0" onclick="limpiarMin120()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max120" value="0" onclick="limpiarMax120()" /></label>
-                <button type="button" id="btn120" onClick="generar120()">Generar</button>
-                <label id="lbl120"></label> <label> x 120% = <input type="number" class="num" name="" id="result120" value="" /></label>
-                <button type="button" id="chk120" onClick="probar120()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn120" onClick="generar120()">Generar</button>
+                <div><label id="lbl120"></label> <label> x 120% = <input type="number" class="num" name="" id="result120" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk120" onClick="probar120()">Resultado</button>
             </div>
             <div class="calculadora" id="calcB59">
-                <h3>5 / 9</h3>
+                <h3>&#9857 &#9858 5 / 9 &#9860 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min150" value="0" onclick="limpiarMin150()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max150" value="0" onclick="limpiarMax150()" /></label>
-                <button type="button" id="btn150" onClick="generar150()">Generar</button>
-                <label id="lbl150"></label> <label> x 150% = <input type="number" class="num" name="" id="result150" value="" /></label>
-                <button type="button" id="chk150" onClick="probar150()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn150" onClick="generar150()">Generar</button>
+                <div><label id="lbl150"></label> <label> x 150% = <input type="number" class="num" name="" id="result150" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk150" onClick="probar150()">Resultado</button>
             </div>
             <div class="calculadora" id="calcB410">
-                <h3>4 / 10</h3>
+                <h3>&#9856 &#9858 4 / 10 &#9861 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min2" value="0" onclick="limpiarMin2()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max2" value="0" onclick="limpiarMax2()" /></label>
-                <button type="button" id="btn2" onClick="generar2()">Generar</button>
-                <label id="lbl2"></label> <label> x 200% = <input type="number" class="num" name="" id="result2" value="" /></label>
-                <button type="button" id="chk2" onClick="probar2()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn2" onClick="generar2()">Generar</button>
+                <div><label id="lbl2"></label> <label> x 200% = <input type="number" class="num" name="" id="result2" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk2" onClick="probar2()">Resultado</button>
             </div>
             <div class="enganche_subTituloM">
                 <h3>A mala</h3>
-                (2000-50000)
             </div>
             <div class="calculadora" id="calcM68">
-                <h3>6 / 8</h3>
+                <h3>&#9857 &#9859 6 / 8 &#9860 &#9858</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min83" value="0" onclick="limpiarMin83()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max83" value="0" onclick="limpiarMax83()" /></label>
-                <button type="button" id="btn83" onClick="generar83()">Generar</button>
-                <label id="lbl83"></label> <label> x 83,3% = <input type="number" class="num" name="" id="result83" value="" /></label>
-                <button type="button" id="chk83" onClick="probar83()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn83" onClick="generar83()">Generar</button>
+                <div><label id="lbl83"></label> <label> x 83,3% = <input type="number" class="num" name="" id="result83" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk83" onClick="probar83()">Resultado</button>
             </div>
             <div class="calculadora" id="calcM59">
-                <h3>5 / 9</h3>
+                <h3>&#9857 &#9858 5 / 9 &#9860 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min66" value="0" onclick="limpiarMin66()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max66" value="0" onclick="limpiarMax66()" /></label>
-                <button type="button" id="btn66" onClick="generar66()">Generar</button>
-                <label id="lbl66"></label> <label> x 66,6% = <input type="number" class="num" name="" id="result66" value="" /></label>
-                <button type="button" id="chk66" onClick="probar66()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn66" onClick="generar66()">Generar</button>
+                <div><label id="lbl66"></label> <label> x 66,6% = <input type="number" class="num" name="" id="result66" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk66" onClick="probar66()">Resultado</button>
             </div>
             <div class="calculadora" id="calcM410">
-                <h3>4 / 10</h3>
+                <h3>&#9856 &#9858 4 / 10 &#9861 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min05" value="0" onclick="limpiarMin05()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max05" value="0" onclick="limpiarMax05()" /></label>
-                <button type="button" id="btn05" onClick="generar05()">Generar</button>
-                <label id="lbl05"></label> <label> x 50% = <input type="number" class="num" name="" id="result05" value="" /></label>
-                <button type="button" id="chk05" onClick="probar05()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn05" onClick="generar05()">Generar</button>
+                <div><label id="lbl05"></label> <label> x 50% = <input type="number" class="num" name="" id="result05" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk05" onClick="probar05()">Resultado</button>
             </div>
         </section>
         <section class="section_costilla">
             <h2 class="costilla_titulo" id="costTit">Costilla</h2>
             <div class="costilla_subTituloB">
                 <h3>A buena</h3>
-                (2000 - 15000)
             </div>
             <div class="calculadora" id="calcCostB68">
-                <h3>6 / 8</h3>
+                <h3>&#9857 &#9859 6 / 8 &#9860 &#9858</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min110" value="0" onclick="limpiarMin110()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max110" value="0" onclick="limpiarMax110()" /></label>
-                <button type="button" id="btn110" onClick="generar110()">Generar</button>
-                <label id="lbl110"></label> <label> x 110% = <input type="number" class="num" name="" id="result110" value="" /></label>
-                <button type="button" id="chk110" onClick="probar110()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn110" onClick="generar110()">Generar</button>
+                <div><label id="lbl110"></label> <label> x 110% = <input type="number" class="num" name="" id="result110" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk110" onClick="probar110()">Resultado</button>
             </div>
             <div class="calculadora" id="calcCostB59">
-                <h3>5 / 9</h3>
+                <h3>&#9857 &#9858 5 / 9 &#9860 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min140" value="0" onclick="limpiarMin140()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max140" value="0" onclick="limpiarMax140()" /></label>
-                <button type="button" id="btn140" onClick="generar140()">Generar</button>
-                <label id="lbl140"></label> <label> x 140% = <input type="number" class="num" name="" id="result140" value="" /></label>
-                <button type="button" id="chk140" onClick="probar140()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn140" onClick="generar140()">Generar</button>
+                <div><label id="lbl140"></label> <label> x 140% = <input type="number" class="num" name="" id="result140" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk140" onClick="probar140()">Resultado</button>
             </div>
             <div class="calculadora" id="calcCostB410">
-                <h3>4 / 10</h3>
+                <h3>&#9856 &#9858 4 / 10 &#9861 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min180" value="0" onclick="limpiarMin180()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max180" value="0" onclick="limpiarMax180()" /></label>
-                <button type="button" id="btn180" onClick="generar180()">Generar</button>
-                <label id="lbl180"></label> <label> x 180% = <input type="number" class="num" name="" id="result180" value="" /></label>
-                <button type="button" id="chk180" onClick="probar180()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn180" onClick="generar180()">Generar</button>
+                <div><label id="lbl180"></label> <label> x 180% = <input type="number" class="num" name="" id="result180" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk180" onClick="probar180()">Resultado</button>
             </div>
             <div class="costilla_subTituloM">
                 <h3>A mala</h3>
-                (2000 - 20000)
             </div>
             <div class="calculadora" id="calcCostM68">
-                <h3>6 / 8</h3>
+                <h3>&#9857 &#9859 6 / 8 &#9860 &#9858</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min80" value="0" onclick="limpiarMin80()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max80" value="0" onclick="limpiarMax80()" /></label>
-                <button type="button" id="btn80" onClick="generar80()">Generar</button>
-                <label id="lbl80"></label> <label> x 80% = <input type="number" class="num" name="" id="result80" value="" /></label>
-                <button type="button" id="chk80" onClick="probar80()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn80" onClick="generar80()">Generar</button>
+                <div><label id="lbl80"></label> <label> x 80% = <input type="number" class="num" name="" id="result80" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk80" onClick="probar80()">Resultado</button>
             </div>
             <div class="calculadora" id="calcCostM59">
-                <h3>5 / 9</h3>
+                <h3>&#9857 &#9858 5 / 9 &#9860 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min60" value="0" onclick="limpiarMin60()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max60" value="0" onclick="limpiarMax60()" /></label>
-                <button type="button" id="btn60" onClick="generar60()">Generar</button>
-                <label id="lbl60"></label> <label> x 60% = <input type="number" class="num" name="" id="result60" value="" /></label>
-                <button type="button" id="chk60" onClick="probar60()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn60" onClick="generar60()">Generar</button>
+                <div><label id="lbl60"></label> <label> x 60% = <input type="number" class="num" name="" id="result60" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk60" onClick="probar60()">Resultado</button>
             </div>
             <div class="calculadora" id="calcCostM410">
-                <h3>4 / 10</h3>
+                <h3>&#9856 &#9858 4 / 10 &#9861 &#9859</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min45" value="0" onclick="limpiarMin45()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max45" value="0" onclick="limpiarMax45()" /></label>
-                <button type="button" id="btn45" onClick="generar45()">Generar</button>
-                <label id="lbl45"></label> <label> x 45% = <input type="number" class="num" name="" id="result45" value="" /></label>
-                <button type="button" id="chk45" onClick="probar45()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn45" onClick="generar45()">Generar</button>
+                <div><label id="lbl45"></label> <label> x 45% = <input type="number" class="num" name="" id="result45" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk45" onClick="probar45()">Resultado</button>
             </div>
         </section>
         <section class="section_craps">
             <div class="craps_titulo" id="crapsTit">
                 <h2>Craps</h2>
-                (1200 - 12000)
             </div>
             <div class="calculadora" id="calcCraps3">
-                <h3>3</h3>
+                <h3>&#9856 &#9857 3 &#9857 &#9856</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min41" value="0" onclick="limpiarMin41()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max41" value="0" onclick="limpiarMax41()" /></label>
-                <button type="button" id="btn41" onClick="generar41()">Generar</button>
-                <label id="lbl41"></label> <label> x 4 + 1 = <input type="number" class="num" name="" id="result41" value="" /></label>
-                <button type="button" id="chk41" onClick="probar41()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn41" onClick="generar41()">Generar</button>
+                <div><label id="lbl41"></label> <label> x 4 + 1 = <input type="number" class="num" name="" id="result41" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk41" onClick="probar41()">Resultado</button>
             </div>
             <div class="calculadora" id="calcCraps212">
-                <h3>2 / 12</h3>
+                <h3>&#9856 &#9856 2 / 12 &#9861 &#9861</h3>
                 <label for="min">Min: <input type="number" class="num" name="" id="min101" value="0" onclick="limpiarMin101()" /></label>
                 <label for="max">Max: <input type="number" class="num" name="" id="max101" value="0" onclick="limpiarMax101()" /></label>
-                <button type="button" id="btn101" onClick="generar101()">Generar</button>
-                <label id="lbl101"></label><label> x 10 - 1 = <input type="number" class="num" name="" id="result101" value="" /></label>
-                <button type="button" id="chk101" onClick="probar101()">Resultado</button>
+                <button class="boton_generar" type="button" id="btn101" onClick="generar101()">Generar</button>
+                <div><label id="lbl101"></label><label> x 10 - 1 = <input type="number" class="num" name="" id="result101" value="" /></label></div>
+                <button class="boton_result" type="button" id="chk101" onClick="probar101()">Resultado</button>
             </div>
         </section>
         <section class="section_tablas">
             <h2 id="Tabla">Tabla de pagos</h2>
-            <div>
+            <div class="tabla-120">
                 <h3>120%</h3>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">100</td>
-                        <td class="right">100</td>
-                        <td class="left">200</td>
-                        <td class="right">200</td>
-                    </tr>
-                    <tr>
-                        <td class="left">300</td>
-                        <td class="right">400</td>
-                        <td class="left">400</td>
-                        <td class="right">500</td>
-                    </tr>
-                    <tr>
-                        <td class="left">500</td>
-                        <td class="right">600</td>
-                        <td class="left">600</td>
-                        <td class="right">700</td>
-                    </tr>
-                    <tr>
-                        <td class="left">700</td>
-                        <td class="right">800</td>
-                        <td class="left"></td>
-                        <td class="right"></td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">800</td>
-                        <td class="bottom_right">1000</td>
-                        <td class="bottom_left">900</td>
-                        <td class="bottom_right">1100</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">800</td>
-                        <td class="right">1000</td>
-                        <td class="left">1700</td>
-                        <td class="right">2000</td>
-                    </tr>
-                    <tr>
-                        <td class="left">2500</td>
-                        <td class="right">3000</td>
-                        <td class="left">3300</td>
-                        <td class="right">4000</td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">4200</td>
-                        <td class="bottom_right">5000</td>
-                        <td class="bottom_left">5000</td>
-                        <td class="bottom_right">6000</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">800</td>
-                        <td class="right">1000</td>
-                        <td class="left">1700</td>
-                        <td class="right">2000</td>
-                    </tr>
-                    <tr>
-                        <td class="left">2500</td>
-                        <td class="right">3000</td>
-                        <td class="left">3300</td>
-                        <td class="right">4000</td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">4200</td>
-                        <td class="bottom_right">5000</td>
-                        <td class="bottom_left">5000</td>
-                        <td class="bottom_right">6000</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">1000</td>
-                        <td class="right">1200</td>
-                        <td class="left">1500</td>
-                        <td class="right">1800</td>
-                    </tr>
-                    <tr>
-                        <td class="left">2000</td>
-                        <td class="right">2400</td>
-                        <td class="left">2500</td>
-                        <td class="right">3000</td>
-                    </tr>
-                    <tr>
-                        <td class="left">3000</td>
-                        <td class="right">3600</td>
-                        <td class="left">3500</td>
-                        <td class="right">4200</td>
-                    </tr>
-                    <tr>
-                        <td class="left">4000</td>
-                        <td class="right">4800</td>
-                        <td class="left">4500</td>
-                        <td class="right">5400</td>
-                    </tr>
-                    <tr>
-                        <td class="left">5000</td>
-                        <td class="right">6000</td>
-                        <td class="left">5500</td>
-                        <td class="right">6600</td>
-                    </tr>
-                    <tr>
-                        <td class="left">6000</td>
-                        <td class="right">7200</td>
-                        <td class="left">6500</td>
-                        <td class="right">7800</td>
-                    </tr>
-                    <tr>
-                        <td class="left">7000</td>
-                        <td class="right">8400</td>
-                        <td class="left">7500</td>
-                        <td class="right">9000</td>
-                    </tr>
-                    <tr>
-                        <td class="left">8000</td>
-                        <td class="right">9600</td>
-                        <td class="left">8500</td>
-                        <td class="right">10200</td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">9000</td>
-                        <td class="bottom_right">10800</td>
-                        <td class="bottom_left">9500</td>
-                        <td class="bottom_right">11400</td>
-                    </tr>
-                </table>
+                <div class="tabla-container">
+                    <div class="tabla-row">
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">100</div>
+                        <div class="celda right">100</div>
+                        <div class="celda left">200</div>
+                        <div class="celda right">200</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">300</div>
+                        <div class="celda right">400</div>
+                        <div class="celda left">400</div>
+                        <div class="celda right">500</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">500</div>
+                        <div class="celda right">600</div>
+                        <div class="celda left">600</div>
+                        <div class="celda right">700</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">700</div>
+                        <div class="celda right">800</div>
+                        <div class="celda left">800</div>
+                        <div class="celda right">1000</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda bottom_left">900</div>
+                        <div class="celda bottom_right">1100</div>
+                    </div>
+                </div>
+                <div class="tabla-container">
+                    <div class="tabla-row">
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">800</div>
+                        <div class="celda right">1000</div>
+                        <div class="celda left">1700</div>
+                        <div class="celda right">2000</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">2500</div>
+                        <div class="celda right">3000</div>
+                        <div class="celda left">3300</div>
+                        <div class="celda right">4000</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda bottom_left">4200</div>
+                        <div class="celda bottom_right">5000</div>
+                        <div class="celda bottom_left">5000</div>
+                        <div class="celda bottom_right">6000</div>
+                    </div>
+                </div>
+                <div class="tabla-container">
+                    <div class="tabla-row">
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">1000</div>
+                        <div class="celda right">1200</div>
+                        <div class="celda left">1500</div>
+                        <div class="celda right">1800</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">2000</div>
+                        <div class="celda right">2400</div>
+                        <div class="celda left">2500</div>
+                        <div class="celda right">3000</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">3000</div>
+                        <div class="celda right">3600</div>
+                        <div class="celda left">3500</div>
+                        <div class="celda right">4200</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">4000</div>
+                        <div class="celda right">4800</div>
+                        <div class="celda left">4500</div>
+                        <div class="celda right">5400</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">5000</div>
+                        <div class="celda right">6000</div>
+                        <div class="celda left">5500</div>
+                        <div class="celda right">6600</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">6000</div>
+                        <div class="celda right">7200</div>
+                        <div class="celda left">6500</div>
+                        <div class="celda right">7800</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">7000</div>
+                        <div class="celda right">8400</div>
+                        <div class="celda left">7500</div>
+                        <div class="celda right">9000</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">8000</div>
+                        <div class="celda right">9600</div>
+                        <div class="celda left">8500</div>
+                        <div class="celda right">10200</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda bottom_left">9000</div>
+                        <div class="celda bottom_right">10800</div>
+                        <div class="celda bottom_left">9500</div>
+                        <div class="celda bottom_right">11400</div>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="tabla-140">
                 <h3>140%</h3>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">500</td>
-                        <td class="right">700</td>
-                        <td class="left">1000</td>
-                        <td class="right">1400</td>
-                    </tr>
-                    <tr>
-                        <td class="left">1500</td>
-                        <td class="right">2100</td>
-                        <td class="left">2000</td>
-                        <td class="right">2800</td>
-                    </tr>
-                    <tr>
-                        <td class="left">2500</td>
-                        <td class="right">3500</td>
-                        <td class="left">3000</td>
-                        <td class="right">4200</td>
-                    </tr>
-                    <tr>
-                        <td class="left">3500</td>
-                        <td class="right">4900</td>
-                        <td class="left">4000</td>
-                        <td class="right">5600</td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">4500</td>
-                        <td class="bottom_right">6300</td>
-                        <td class="bottom_left">5000</td>
-                        <td class="bottom_right">7000</td>
-                    </tr>
-                </table>
+                <div class="tabla-container">
+                    <div class="tabla-row">
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">500</div>
+                        <div class="celda right">700</div>
+                        <div class="celda left">1000</div>
+                        <div class="celda right">1400</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">1500</div>
+                        <div class="celda right">2100</div>
+                        <div class="celda left">2000</div>
+                        <div class="celda right">2800</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">2500</div>
+                        <div class="celda right">3500</div>
+                        <div class="celda left">3000</div>
+                        <div class="celda right">4200</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">3500</div>
+                        <div class="celda right">4900</div>
+                        <div class="celda left">4000</div>
+                        <div class="celda right">5600</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda bottom_left">4500</div>
+                        <div class="celda bottom_right">6300</div>
+                        <div class="celda bottom_left">5000</div>
+                        <div class="celda bottom_right">7000</div>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="tabla-180">
                 <h3>180%</h3>
-                <table>
-                    <tr>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                        <td class="top_left">Base</td>
-                        <td class="top_right">Pago</td>
-                    </tr>
-                    <tr>
-                        <td class="left">500</td>
-                        <td class="right">900</td>
-                        <td class="left">1000</td>
-                        <td class="right">1800</td>
-                    </tr>
-                    <tr>
-                        <td class="left">1500</td>
-                        <td class="right">2700</td>
-                        <td class="left">2000</td>
-                        <td class="right">3600</td>
-                    </tr>
-                    <tr>
-                        <td class="left">2500</td>
-                        <td class="right">4500</td>
-                        <td class="left">3000</td>
-                        <td class="right">5400</td>
-                    </tr>
-                    <tr>
-                        <td class="left">3500</td>
-                        <td class="right">6300</td>
-                        <td class="left">4000</td>
-                        <td class="right">7200</td>
-                    </tr>
-                    <tr>
-                        <td class="bottom_left">4500</td>
-                        <td class="bottom_right">8100</td>
-                        <td class="bottom_left">5000</td>
-                        <td class="bottom_right">9000</td>
-                    </tr>
-                </table>
+                <div class="tabla-container">
+                    <div class="tabla-row">
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                        <div class="celda top_left">Base</div>
+                        <div class="celda top_right">Pago</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">500</div>
+                        <div class="celda right">900</div>
+                        <div class="celda left">1000</div>
+                        <div class="celda right">1800</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">1500</div>
+                        <div class="celda right">2700</div>
+                        <div class="celda left">2000</div>
+                        <div class="celda right">3600</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">2500</div>
+                        <div class="celda right">4500</div>
+                        <div class="celda left">3000</div>
+                        <div class="celda right">5400</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda left">3500</div>
+                        <div class="celda right">6300</div>
+                        <div class="celda left">4000</div>
+                        <div class="celda right">7200</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="celda bottom_left">4500</div>
+                        <div class="celda bottom_right">8100</div>
+                        <div class="celda bottom_left">5000</div>
+                        <div class="celda bottom_right">9000</div>
+                    </div>
+                </div>
             </div>
         </section>
         </main>
         <footer>
-            <label for="">Ge Cirou</label>
+            <label>Ge Cirou</label>
         </footer>
     </body>
     <script src="multi.js"></script>
