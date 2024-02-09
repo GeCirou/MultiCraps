@@ -63,6 +63,9 @@ h3 {
 }
 section {
     padding: 1rem;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
     border: 4px var(--colorBoton) solid;
     border-radius: 20px;
 }

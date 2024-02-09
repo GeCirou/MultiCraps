@@ -1,0 +1,77 @@
+.section_camu,
+.section_cuadro,
+.section_enganche,
+.section_costilla {
+    width: 350px;
+    font-size: 3rem;
+}
+
+/* HEADER */
+header{
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "camu cuadro"
+    "enganche costilla"
+    "craps craps"
+    "tabla tabla";
+}
+h1 {
+    font-size: 6rem;
+    grid-area: title;
+}
+.section_camu {
+    grid-area: camu;
+}
+.section_cuadro {
+    grid-area: cuadro;
+}
+.section_enganche {
+    grid-area: enganche;
+}
+.section_costilla {
+    grid-area: costilla;
+}
+.section_craps {
+    width: 100%;
+    max-width: 740px;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    grid-area: craps;
+    display: grid;
+    grid-template-areas: 
+    "titleC titleC"
+    "calc1 calc2";
+}
+.craps_titulo {
+    grid-area: titleC;
+}
+#calcCraps3 {
+    grid-area: calc1;
+}
+#calcCraps212 {
+    grid-area: calc2;
+}
+.section_tablas {
+    width: 100%;
+    max-width: 740px;
+    font-size: 3rem;
+    grid-area: tabla;
+}
+
+.num {
+    width: 10rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+/* FOOTER */
+footer {
+    font-size: 5rem;
+}
